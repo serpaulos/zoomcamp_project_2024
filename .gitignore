@@ -35,9 +35,7 @@ override.tf.json
 terraform.rc
 T_echnical_Documentation__College_Scorecard_Institution-Level_Da-job_16.pdf
 data_infra/*
-mage_data/magic-zoomcamp/.cache/*
-mage_data/magic-zoomcamp/.operation_history/*
-
+mage_data/*
 magic-zoomcamp/__init__.py
 magic-zoomcamp/.gitignore
 magic-zoomcamp/io_config.yaml
