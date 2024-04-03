@@ -13,7 +13,7 @@ if 'data_exporter' not in globals():
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/src/keys/google_creds.json"
 
-bucket_name = 'mage_test'
+bucket_name = 'de-zoomcamp-2024-project'
 project_id = 'nyc_tzoomcamp-2024-psergios'
 table_name = "nyc_data"
 root_path = f"{bucket_name}/{table_name}"

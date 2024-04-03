@@ -66,6 +66,7 @@ magic-zoomcamp/utils/__init__.py
 #manually added
 .env
 *.csv
+*.parquet
 keys/google_creds.json
 data_infra/mysql-db/*
 explore/data/*
@@ -76,3 +77,4 @@ outros/variable copy.tf
 anotations.txt
 .operation_history
 .cache
+data/
