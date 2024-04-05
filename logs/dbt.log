@@ -1,0 +1,438 @@
+[0m05:02:23.967871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a451483a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a4364e580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a4364e790>]}
+
+
+============================== 05:02:23.971090 | 76737bfb-04bb-4ca3-9840-940dd73768a5 ==============================
+[0m05:02:23.971090 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:02:23.971590 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/psergios/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m05:02:49.624357 [debug] [MainThread]: Starter project path: /home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/include/starter_project
+[0m05:02:49.627005 [info ] [MainThread]: 
+Your new dbt project "real_state_sales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:02:49.627465 [info ] [MainThread]: Setting up your profile.
+[0m05:03:50.721294 [error] [MainThread]: Encountered an error:
+[Errno 13] Permission denied: '/home/psergios/.dbt/profiles.yml'
+[0m05:03:50.722414 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 168, in create_profile_from_profile_template
+    self.write_profile(profile, profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 158, in write_profile
+    with open(profiles_filepath, "w") as f:
+PermissionError: [Errno 13] Permission denied: '/home/psergios/.dbt/profiles.yml'
+
+[0m05:03:50.723531 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 86.79312, "process_user_time": 2.128821, "process_kernel_time": 0.755388, "process_mem_max_rss": "182644", "process_in_blocks": "8", "process_out_blocks": "80", "command_success": false}
+[0m05:03:50.724170 [debug] [MainThread]: Command `dbt init` failed at 05:03:50.723995 after 86.79 seconds
+[0m05:03:50.724716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a451483a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a17cf6c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3a17cf6610>]}
+[0m05:03:50.725300 [debug] [MainThread]: Flushing usage events
+[0m05:06:35.615241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79883330a940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988318065e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988318063d0>]}
+
+
+============================== 05:06:35.618265 | 8a0e8c49-a15a-40e6-bb3c-fa239e01d2de ==============================
+[0m05:06:35.618265 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:06:35.618790 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/psergios/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:06:44.893980 [debug] [MainThread]: Starter project path: /home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/include/starter_project
+[0m05:06:44.896604 [info ] [MainThread]: 
+Your new dbt project "reat_state_sales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:06:44.897059 [info ] [MainThread]: Setting up your profile.
+[0m05:07:54.016823 [info ] [MainThread]: Profile reat_state_sales written to /home/psergios/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m05:07:54.017840 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 78.43943, "process_user_time": 2.019275, "process_kernel_time": 0.784609, "process_mem_max_rss": "182488", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m05:07:54.018375 [debug] [MainThread]: Command `dbt init` succeeded at 05:07:54.018248 after 78.44 seconds
+[0m05:07:54.018760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79883330a940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988317f8610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988317f8d30>]}
+[0m05:07:54.019205 [debug] [MainThread]: Flushing usage events
+[0m05:26:05.289896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af56c822610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af56ab00a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af56ab00e80>]}
+
+
+============================== 05:26:05.292975 | 5147b85f-46fc-4f67-90e9-a5fc1a86131a ==============================
+[0m05:26:05.292975 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:26:05.293522 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m05:26:05.294091 [info ] [MainThread]: dbt version: 1.7.11
+[0m05:26:05.294430 [info ] [MainThread]: python version: 3.9.18
+[0m05:26:05.294772 [info ] [MainThread]: python path: /home/psergios/anaconda3/envs/zoomcamp/bin/python
+[0m05:26:05.295086 [info ] [MainThread]: os info: Linux-6.5.0-26-generic-x86_64-with-glibc2.35
+[0m05:26:05.858760 [info ] [MainThread]: Using profiles dir at /home/psergios/.dbt
+[0m05:26:05.859278 [info ] [MainThread]: Using profiles.yml file at /home/psergios/.dbt/profiles.yml
+[0m05:26:05.859725 [info ] [MainThread]: Using dbt_project.yml file at /home/psergios/projects/dataengineer/zoom_project/dbt_project.yml
+[0m05:26:05.860209 [info ] [MainThread]: adapter type: bigquery
+[0m05:26:05.860541 [info ] [MainThread]: adapter version: 1.7.7
+[0m05:26:05.860880 [info ] [MainThread]: Configuration:
+[0m05:26:05.861196 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:26:05.861510 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m05:26:05.861821 [info ] [MainThread]: Required dependencies:
+[0m05:26:05.862153 [debug] [MainThread]: Executing "git --help"
+[0m05:26:05.870712 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:26:05.871537 [debug] [MainThread]: STDERR: "b''"
+[0m05:26:05.872017 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:26:05.872421 [info ] [MainThread]: Connection:
+[0m05:26:05.872801 [info ] [MainThread]:   method: service-account
+[0m05:26:05.873115 [info ] [MainThread]:   database: zoomcamp-2024-psergios
+[0m05:26:05.873414 [info ] [MainThread]:   execution_project: zoomcamp-2024-psergios
+[0m05:26:05.873701 [info ] [MainThread]:   schema: retail_project_dataset
+[0m05:26:05.873997 [info ] [MainThread]:   location: US
+[0m05:26:05.874285 [info ] [MainThread]:   priority: interactive
+[0m05:26:05.874581 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m05:26:05.874881 [info ] [MainThread]:   impersonate_service_account: None
+[0m05:26:05.875185 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m05:26:05.875470 [info ] [MainThread]:   job_retries: 1
+[0m05:26:05.875758 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m05:26:05.876043 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m05:26:05.876331 [info ] [MainThread]:   timeout_seconds: 300
+[0m05:26:05.876615 [info ] [MainThread]:   client_id: None
+[0m05:26:05.876904 [info ] [MainThread]:   token_uri: None
+[0m05:26:05.877187 [info ] [MainThread]:   dataproc_region: None
+[0m05:26:05.877471 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m05:26:05.877755 [info ] [MainThread]:   gcs_bucket: None
+[0m05:26:05.878042 [info ] [MainThread]:   dataproc_batch: None
+[0m05:26:05.878494 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m05:26:05.879169 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:26:05.879522 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:26:05.879961 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '~/.google/credentials/google_creds.json''
+[0m05:26:05.880373 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m05:26:05.880715 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m05:26:05.881018 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/psergios/projects/dataengineer/zoom_project/dbt_project.yml> not found
+
+[0m05:26:05.881324 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: '~/.google/credentials/google_creds.json'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m05:26:05.882244 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.62903947, "process_user_time": 2.078232, "process_kernel_time": 0.832864, "process_mem_max_rss": "183936", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m05:26:05.882854 [debug] [MainThread]: Command `dbt debug` failed at 05:26:05.882720 after 0.63 seconds
+[0m05:26:05.883242 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:26:05.883617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af56c822610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af53f0eb250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af53f70a070>]}
+[0m05:26:05.884040 [debug] [MainThread]: Flushing usage events
+[0m05:28:10.238355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c98522843a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c9850785100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c9850785be0>]}
+
+
+============================== 05:28:10.241274 | 2c36a1f2-60db-47bf-b041-9fb900465ffa ==============================
+[0m05:28:10.241274 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:28:10.241777 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/projects/dataengineer/zoom_project', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m05:28:10.242352 [info ] [MainThread]: dbt version: 1.7.11
+[0m05:28:10.242728 [info ] [MainThread]: python version: 3.9.18
+[0m05:28:10.243063 [info ] [MainThread]: python path: /home/psergios/anaconda3/envs/zoomcamp/bin/python
+[0m05:28:10.243378 [info ] [MainThread]: os info: Linux-6.5.0-26-generic-x86_64-with-glibc2.35
+[0m05:28:10.784660 [info ] [MainThread]: Using profiles dir at /home/psergios/projects/dataengineer/zoom_project
+[0m05:28:10.785182 [info ] [MainThread]: Using profiles.yml file at /home/psergios/projects/dataengineer/zoom_project/profiles.yml
+[0m05:28:10.785556 [info ] [MainThread]: Using dbt_project.yml file at /home/psergios/projects/dataengineer/zoom_project/dbt_project.yml
+[0m05:28:10.786045 [info ] [MainThread]: adapter type: bigquery
+[0m05:28:10.786380 [info ] [MainThread]: adapter version: 1.7.7
+[0m05:28:10.786733 [info ] [MainThread]: Configuration:
+[0m05:28:10.787041 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:28:10.787349 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m05:28:10.787657 [info ] [MainThread]: Required dependencies:
+[0m05:28:10.787987 [debug] [MainThread]: Executing "git --help"
+[0m05:28:10.796619 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:28:10.797313 [debug] [MainThread]: STDERR: "b''"
+[0m05:28:10.797696 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:28:10.798042 [info ] [MainThread]: Connection:
+[0m05:28:10.798418 [info ] [MainThread]:   method: service-account
+[0m05:28:10.798751 [info ] [MainThread]:   database: zoomcamp-2024-psergios
+[0m05:28:10.799059 [info ] [MainThread]:   execution_project: zoomcamp-2024-psergios
+[0m05:28:10.799362 [info ] [MainThread]:   schema: retail_project_dataset
+[0m05:28:10.799664 [info ] [MainThread]:   location: US
+[0m05:28:10.799966 [info ] [MainThread]:   priority: interactive
+[0m05:28:10.800268 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m05:28:10.800573 [info ] [MainThread]:   impersonate_service_account: None
+[0m05:28:10.800872 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m05:28:10.801170 [info ] [MainThread]:   job_retries: 1
+[0m05:28:10.801467 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m05:28:10.801762 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m05:28:10.802061 [info ] [MainThread]:   timeout_seconds: 300
+[0m05:28:10.802356 [info ] [MainThread]:   client_id: None
+[0m05:28:10.802691 [info ] [MainThread]:   token_uri: None
+[0m05:28:10.802989 [info ] [MainThread]:   dataproc_region: None
+[0m05:28:10.803284 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m05:28:10.803581 [info ] [MainThread]:   gcs_bucket: None
+[0m05:28:10.803875 [info ] [MainThread]:   dataproc_batch: None
+[0m05:28:10.804325 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m05:28:10.805002 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:28:10.805360 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:28:10.805808 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '~/.google/credentials/google_creds.json''
+[0m05:28:10.806223 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m05:28:10.806590 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m05:28:10.806914 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/psergios/projects/dataengineer/zoom_project/dbt_project.yml> not found
+
+[0m05:28:10.807232 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: '~/.google/credentials/google_creds.json'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m05:28:10.808159 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.6061352, "process_user_time": 2.035105, "process_kernel_time": 0.822786, "process_mem_max_rss": "183320", "process_out_blocks": "32", "command_success": false, "process_in_blocks": "0"}
+[0m05:28:10.808774 [debug] [MainThread]: Command `dbt debug` failed at 05:28:10.808639 after 0.61 seconds
+[0m05:28:10.809162 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:28:10.809596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c98522843a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c9828dc1640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c9828d77340>]}
+[0m05:28:10.810085 [debug] [MainThread]: Flushing usage events
+[0m05:28:37.165884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe030488100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe02e98d580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe02e98d790>]}
+
+
+============================== 05:28:37.168817 | c1e8551d-b44d-4d9b-9d36-2b19ecaeadc6 ==============================
+[0m05:28:37.168817 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:28:37.169353 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m05:28:37.169926 [info ] [MainThread]: dbt version: 1.7.11
+[0m05:28:37.170303 [info ] [MainThread]: python version: 3.9.18
+[0m05:28:37.170616 [info ] [MainThread]: python path: /home/psergios/anaconda3/envs/zoomcamp/bin/python
+[0m05:28:37.170943 [info ] [MainThread]: os info: Linux-6.5.0-26-generic-x86_64-with-glibc2.35
+[0m05:28:37.723828 [info ] [MainThread]: Using profiles dir at /home/psergios/.dbt
+[0m05:28:37.724352 [info ] [MainThread]: Using profiles.yml file at /home/psergios/.dbt/profiles.yml
+[0m05:28:37.724806 [info ] [MainThread]: Using dbt_project.yml file at /home/psergios/projects/dataengineer/zoom_project/dbt_project.yml
+[0m05:28:37.725287 [info ] [MainThread]: adapter type: bigquery
+[0m05:28:37.725626 [info ] [MainThread]: adapter version: 1.7.7
+[0m05:28:37.725981 [info ] [MainThread]: Configuration:
+[0m05:28:37.726304 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:28:37.726642 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m05:28:37.726976 [info ] [MainThread]: Required dependencies:
+[0m05:28:37.727331 [debug] [MainThread]: Executing "git --help"
+[0m05:28:37.736812 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:28:37.737471 [debug] [MainThread]: STDERR: "b''"
+[0m05:28:37.737848 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:28:37.738196 [info ] [MainThread]: Connection:
+[0m05:28:37.738599 [info ] [MainThread]:   method: service-account
+[0m05:28:37.738922 [info ] [MainThread]:   database: zoomcamp-2024-psergios
+[0m05:28:37.739233 [info ] [MainThread]:   execution_project: zoomcamp-2024-psergios
+[0m05:28:37.739528 [info ] [MainThread]:   schema: retail_project_dataset
+[0m05:28:37.739819 [info ] [MainThread]:   location: US
+[0m05:28:37.740110 [info ] [MainThread]:   priority: interactive
+[0m05:28:37.740404 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m05:28:37.740695 [info ] [MainThread]:   impersonate_service_account: None
+[0m05:28:37.740984 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m05:28:37.741272 [info ] [MainThread]:   job_retries: 1
+[0m05:28:37.741559 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m05:28:37.741849 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m05:28:37.742137 [info ] [MainThread]:   timeout_seconds: 300
+[0m05:28:37.742424 [info ] [MainThread]:   client_id: None
+[0m05:28:37.742729 [info ] [MainThread]:   token_uri: None
+[0m05:28:37.743021 [info ] [MainThread]:   dataproc_region: None
+[0m05:28:37.743309 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m05:28:37.743593 [info ] [MainThread]:   gcs_bucket: None
+[0m05:28:37.743879 [info ] [MainThread]:   dataproc_batch: None
+[0m05:28:37.744327 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m05:28:37.744996 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:28:37.745367 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:28:37.745807 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '~/.google/credentials/google_creds.json''
+[0m05:28:37.746215 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m05:28:37.746549 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m05:28:37.746907 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/psergios/projects/dataengineer/zoom_project/dbt_project.yml> not found
+
+[0m05:28:37.747219 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: '~/.google/credentials/google_creds.json'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m05:28:37.748144 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.61868364, "process_user_time": 2.078159, "process_kernel_time": 0.812665, "process_mem_max_rss": "183692", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m05:28:37.748731 [debug] [MainThread]: Command `dbt debug` failed at 05:28:37.748598 after 0.62 seconds
+[0m05:28:37.749100 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:28:37.749466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe030488100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe002f43dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe002fc88e0>]}
+[0m05:28:37.749893 [debug] [MainThread]: Flushing usage events
+[0m05:29:12.176625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cb2f08100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cb140f580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cb140f790>]}
+
+
+============================== 05:29:12.179442 | f2ed1e32-8314-48d7-862b-30b704e3b28d ==============================
+[0m05:29:12.179442 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:29:12.179986 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init real_state_sales', 'send_anonymous_usage_stats': 'True'}
+[0m05:29:12.181583 [debug] [MainThread]: Starter project path: /home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/include/starter_project
+[0m05:29:12.183830 [info ] [MainThread]: 
+Your new dbt project "real_state_sales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:29:12.184217 [info ] [MainThread]: Setting up your profile.
+[0m05:30:29.593863 [error] [MainThread]: Encountered an error:
+
+[0m05:30:29.595416 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m05:30:29.596463 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 77.45571, "process_user_time": 1.958511, "process_kernel_time": 0.851352, "process_mem_max_rss": "182668", "process_out_blocks": "80", "command_success": false, "process_in_blocks": "0"}
+[0m05:30:29.597094 [debug] [MainThread]: Command `dbt init` failed at 05:30:29.596944 after 77.46 seconds
+[0m05:30:29.597525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cb2f08100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c85a4a2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c85a4ad00>]}
+[0m05:30:29.597960 [debug] [MainThread]: Flushing usage events
+[0m05:30:34.949399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3655848940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3653d5ceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3653d4fc70>]}
+
+
+============================== 05:30:34.952267 | fd65449e-802d-4114-b1e2-ff56e4f37d4c ==============================
+[0m05:30:34.952267 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:30:34.952792 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init real_state_sales', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:30:34.954372 [info ] [MainThread]: A project called real_state_sales already exists here.
+[0m05:30:34.955181 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.042649288, "process_user_time": 1.449524, "process_kernel_time": 0.059897, "process_mem_max_rss": "88052", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m05:30:34.955740 [debug] [MainThread]: Command `dbt init` succeeded at 05:30:34.955587 after 0.04 seconds
+[0m05:30:34.956113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3655848940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3653d5ceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3653d40100>]}
+[0m05:30:34.956489 [debug] [MainThread]: Flushing usage events
+[0m05:30:48.916373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c45cca940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c44202eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c441f5c70>]}
+
+
+============================== 05:30:48.919334 | 0e624a87-c50b-4ea6-b810-99af00f8f033 ==============================
+[0m05:30:48.919334 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:30:48.919862 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/psergios/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init real_state_sales', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:30:48.921440 [debug] [MainThread]: Starter project path: /home/psergios/anaconda3/envs/zoomcamp/lib/python3.9/site-packages/dbt/include/starter_project
+[0m05:30:48.923689 [info ] [MainThread]: 
+Your new dbt project "real_state_sales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:30:48.924094 [info ] [MainThread]: Setting up your profile.
+[0m05:32:12.728115 [info ] [MainThread]: Profile real_state_sales written to /home/psergios/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m05:32:12.729332 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 83.84983, "process_user_time": 2.030629, "process_kernel_time": 0.812251, "process_mem_max_rss": "182700", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m05:32:12.729949 [debug] [MainThread]: Command `dbt init` succeeded at 05:32:12.729801 after 83.85 seconds
+[0m05:32:12.730375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c45cca940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c48191d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a4c441e6100>]}
+[0m05:32:12.730826 [debug] [MainThread]: Flushing usage events
+[0m05:33:50.085455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfbfcd670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfa4f45e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfa4f43d0>]}
+
+
+============================== 05:33:50.088446 | 3576fbf6-4644-4462-83d9-d42b6fc2c92e ==============================
+[0m05:33:50.088446 [info ] [MainThread]: Running with dbt=1.7.11
+[0m05:33:50.088996 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/psergios/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m05:33:50.089550 [info ] [MainThread]: dbt version: 1.7.11
+[0m05:33:50.089895 [info ] [MainThread]: python version: 3.9.18
+[0m05:33:50.090220 [info ] [MainThread]: python path: /home/psergios/anaconda3/envs/zoomcamp/bin/python
+[0m05:33:50.090536 [info ] [MainThread]: os info: Linux-6.5.0-26-generic-x86_64-with-glibc2.35
+[0m05:33:50.630267 [info ] [MainThread]: Using profiles dir at /home/psergios/.dbt
+[0m05:33:50.630789 [info ] [MainThread]: Using profiles.yml file at /home/psergios/.dbt/profiles.yml
+[0m05:33:50.631177 [info ] [MainThread]: Using dbt_project.yml file at /home/psergios/projects/dataengineer/zoom_project/dbt_project.yml
+[0m05:33:50.631662 [info ] [MainThread]: adapter type: bigquery
+[0m05:33:50.632001 [info ] [MainThread]: adapter version: 1.7.7
+[0m05:33:50.632369 [info ] [MainThread]: Configuration:
+[0m05:33:50.632695 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:33:50.633000 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m05:33:50.633305 [info ] [MainThread]: Required dependencies:
+[0m05:33:50.633633 [debug] [MainThread]: Executing "git --help"
+[0m05:33:50.643909 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:33:50.644564 [debug] [MainThread]: STDERR: "b''"
+[0m05:33:50.644959 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:33:50.645293 [info ] [MainThread]: Connection:
+[0m05:33:50.645667 [info ] [MainThread]:   method: service-account
+[0m05:33:50.645970 [info ] [MainThread]:   database: zoomcamp-2024-psergios
+[0m05:33:50.646261 [info ] [MainThread]:   execution_project: zoomcamp-2024-psergios
+[0m05:33:50.646545 [info ] [MainThread]:   schema: retail_project_dataset
+[0m05:33:50.646853 [info ] [MainThread]:   location: US
+[0m05:33:50.647138 [info ] [MainThread]:   priority: interactive
+[0m05:33:50.647423 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m05:33:50.647705 [info ] [MainThread]:   impersonate_service_account: None
+[0m05:33:50.647987 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m05:33:50.648269 [info ] [MainThread]:   job_retries: 1
+[0m05:33:50.648552 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m05:33:50.648832 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m05:33:50.649110 [info ] [MainThread]:   timeout_seconds: 300
+[0m05:33:50.649387 [info ] [MainThread]:   client_id: None
+[0m05:33:50.649662 [info ] [MainThread]:   token_uri: None
+[0m05:33:50.649938 [info ] [MainThread]:   dataproc_region: None
+[0m05:33:50.650213 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m05:33:50.650489 [info ] [MainThread]:   gcs_bucket: None
+[0m05:33:50.650807 [info ] [MainThread]:   dataproc_batch: None
+[0m05:33:50.651248 [info ] [MainThread]: Registered adapter: bigquery=1.7.7
+[0m05:33:50.651896 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:33:50.652246 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:33:50.654156 [debug] [MainThread]: On debug: select 1 as id
+[0m05:33:51.573736 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcamp-2024-psergios&j=bq:US:a524b449-6abd-4411-958b-d72815cfff16&page=queryresults
+[0m05:33:52.129859 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:33:52.130438 [info ] [MainThread]: [31m1 check failed:[0m
+[0m05:33:52.130913 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/psergios/projects/dataengineer/zoom_project/dbt_project.yml> not found
+
+[0m05:33:52.132022 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 2.0829282, "process_user_time": 2.132849, "process_kernel_time": 0.811366, "process_mem_max_rss": "186520", "process_in_blocks": "8", "process_out_blocks": "24", "command_success": false}
+[0m05:33:52.132716 [debug] [MainThread]: Command `dbt debug` failed at 05:33:52.132557 after 2.08 seconds
+[0m05:33:52.133168 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:33:52.133596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfbfcd670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfa4d3970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dbfa4e8f10>]}
+[0m05:33:52.134070 [debug] [MainThread]: Flushing usage events

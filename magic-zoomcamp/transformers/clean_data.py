@@ -1,6 +1,5 @@
-import pyarrow as pa
-import pyarrow.parquet as pq
-import os
+import pandas as pd
+
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
 if 'test' not in globals():
@@ -24,7 +23,6 @@ def transform(data, *args, **kwargs):
     """
     # Specify your transformation logic here
 
-    # Convert column names to lowercase
     data.columns = data.columns.str.lower()
 
     # Convert column names to snake case
@@ -33,7 +31,12 @@ def transform(data, *args, **kwargs):
     # Delete unnecessary columns
     data = data.loc[:, ~data.columns.isin(['serial_number','location','opm_remarks', 'assessor_remarks', 'non_use_code'])]
 
-    
+    data["residential_type"] = data["residential_type"].fillna("NA")
+    data["property_type"] = data["property_type"].fillna("NA")
+    data["address"] = data["address"].fillna("NA")
+
+    print(data.isnull().sum())
+
     return data
 
 

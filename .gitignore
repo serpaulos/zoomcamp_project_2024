@@ -70,10 +70,7 @@ magic-zoomcamp/utils/__init__.py
 keys/google_creds.json
 data_infra/mysql-db/*
 explore/data/*
-outros/docker-compose copy.yml
-outros/Dockerfile
-outros/main copy.tf
-outros/variable copy.tf
+outros/*
 anotations.txt
 .operation_history
 .cache

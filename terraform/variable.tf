@@ -80,7 +80,7 @@ variable "ssl" {
 
 variable "bg_dataset_name" {
   description = "My BigQuery Dataset Name"
-  default     = "project_dataset"
+  default     = "retail_project_dataset"
 }
 
 variable "gcs_bucket_name" {
