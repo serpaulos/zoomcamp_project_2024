@@ -23,8 +23,8 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'dev'
 
-    bucket_name = 'zoomcamp_psergios'
-    object_key = 'ny_taxi_data.parquet'
+    bucket_name = 'de-zoomcamp-2024-project'
+    object_key = 'real_state_sales.parquet'
 
     GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).export(
         df,

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: real_state
+    database: zoomcamp-2024-psergios
+    schema: retail_project_dataset
+  
+    tables:
+      - name: real_state_sales_data

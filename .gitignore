@@ -75,3 +75,5 @@ anotations.txt
 .operation_history
 .cache
 data/
+logs/
+profile/.user.yml

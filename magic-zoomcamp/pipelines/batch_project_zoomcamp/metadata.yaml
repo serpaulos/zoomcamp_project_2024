@@ -26,16 +26,17 @@ blocks:
   language: python
   name: clean_data
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - download_data
   uuid: clean_data
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - create_external_table
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -52,6 +53,7 @@ blocks:
   color: null
   configuration:
     data_provider: bigquery
+    data_provider_profile: dev
     dbt: {}
     disable_query_preprocessing: false
     export_write_policy: append
@@ -64,10 +66,11 @@ blocks:
   language: sql
   name: create_external_table
   retry_config: null
-  status: failed
+  status: executed
   timeout: null
   type: data_exporter
-  upstream_blocks: []
+  upstream_blocks:
+  - export_parquet_gcs
   uuid: create_external_table
 - all_upstream_blocks_executed: true
   color: null
