@@ -43,8 +43,9 @@
 - Select your project and choose the dataset/data
 - Create the  visualisation and share it ;)
 <br>
-- - This is the visalization created to this project
-![Visualisation](images/dashboard.png)
+- This is the visalization created to this project <br>
+- 
+![Pipeline](images/dashboard.png)
 
 ## Contact
 made by [@paulosilvajr](https://www.linkedin.com/in/paulosilvajr/) - feel free to contact me if you need!
