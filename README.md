@@ -44,7 +44,7 @@
 - Create the  visualisation and share it ;)
 <br>
 - This is the visalization created to this project <br>
-- 
+
 ![Pipeline](images/dashboard.png)
 
 ## Contact
