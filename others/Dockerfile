@@ -16,7 +16,9 @@ FROM --platform=$build_for python:3.9.19 as base
 
 ARG dbt_core_ref=dbt-core@v1.0.1
 ARG dbt_postgres_ref=dbt-core@v1.0.1
+#ARG dbt_redshift_ref=dbt-redshift@v1.0.0
 ARG dbt_bigquery_ref=dbt-bigquery@v1.0.0
+#ARG dbt_snowflake_ref=dbt-snowflake@v1.0.0
 ARG dbt_spark_ref=dbt-spark@v1.0.0
 # special case args
 ARG dbt_spark_version=all
@@ -67,11 +69,24 @@ RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_
 
 
 ##
+# dbt-redshift
+##
+#FROM base as dbt-redshift
+#RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift"
+
+
+##
 # dbt-bigquery
 ##
 FROM base as dbt-bigquery
 RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_bigquery_ref}#egg=dbt-bigquery"
 
+
+##
+# dbt-snowflake
+##
+#FROM base as dbt-snowflake
+#RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_snowflake_ref}#egg=dbt-snowflake"
 
 ##
 # dbt-spark

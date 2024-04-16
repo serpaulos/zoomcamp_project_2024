@@ -34,12 +34,12 @@ services:
     ports:
       - "${POSTGRES_PORT}:5432"
   dbt-bq:
-    build:
-      context: .
-      target: dbt-bigquery
-    image: dbt/bigquery
-    volumes:
-      - .:/usr/app
-      - ~/.dbt/:/root/.dbt/
-      - ~/.google/credentials/google_creds.json:/.google/credentials/google_creds.json
-    network_mode: host      
+      build:
+        context: .
+        target: dbt-bigquery
+      image: dbt/bigquery
+      volumes:
+        - .:/usr/app
+        - ~/.dbt/:/root/.dbt/
+        - ~/.google/credentials/google_creds.json:/.google/credentials/google_creds.json
+      network_mode: host      
