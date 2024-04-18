@@ -1,5 +1,7 @@
 # Houses retail project
 
+![Pipeline](images/pipeline.png)<br>
+
 ## Objectives
 - This project are part of the final assesment of Data Engineer Zoomcamp. It contains an End-to-End pipeline <br>
 
@@ -19,7 +21,10 @@
 - To reproduce this test you can clone the project using this link https://github.com/serpaulos/zoomcamp_project_2024
 - Inside the root folder you can find the .env_model, copy/rename it to .env and change it accordingly.
 - You will also need a GCP account to reproduce this project
-- Configure the service account and save the JSON file inside the keys folder on root folder and change file name to google_creds.json. You will need to add these roles in addition to Viewer : Storage Admin + Storage Object Admin + BigQuery Admin
+- Configure the service account and save the JSON file inside the keys folder on root folder and change file name to google_creds.json. You will need to add these roles in addition to Viewer :  
+  - Storage Admin
+  - Storage Object Admin 
+  - BigQuery Admin
 - [Installing Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - [Installing gcloud CLI](]https://cloud.google.com/sdk/docs/install)
 - execute the command DOCKER-COMPOSE UP to spin the necessary enviroment.
